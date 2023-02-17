@@ -21,6 +21,17 @@ const showContent = (n = 0) => {
 
 showContent();
 
+let c = 0;
+const slider = () => {
+  setInterval(() => {
+    if (c === 4) c = 0;
+    hideContent();
+    showContent(c);
+    c++;
+  }, 1500);
+};
+
+slider();
 //////////////////
 
 tabParent.addEventListener("click", (e) => {
@@ -42,11 +53,30 @@ tabParent.addEventListener("click", (e) => {
 const modal = document.querySelector(".modal");
 const open = document.querySelector("#open_modal");
 const close = document.querySelector("#close_modal");
+const btnTwo = document.querySelector("#btn_two");
+const body = document.querySelector("body");
 
 open.addEventListener("click", () => {
   modal.style.display = "block";
+  body.style.overflow = "hidden";
+});
+
+btnTwo.addEventListener("click", () => {
+  modal.style.display = "block";
+  body.style.overflow = "hidden";
 });
 
 close.addEventListener("click", () => {
   modal.style.display = "none";
+  body.style.overflow = "visible";
+});
+
+////////////////////////////////////////////
+
+window.addEventListener("scroll", () => {
+  const bbb = document.getElementById("newCordinates");
+  bbb.innerHTML = pageYOffset;
+  if (bbb.innerHTML > 4400) {
+    modal.style.display = "block";
+  }
 });
