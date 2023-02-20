@@ -1,55 +1,22 @@
-{
-  "Hello": "MT",
-  "name": "Nurdin",
-  "age": 20,
-  "mother": {
-    "name": "ЯA",
-    "age": 22
+[
+  {
+    "name": "Leon",
+    "age": 14
   },
-  "children": ["Алиш", "Игорь", "Макс"],
-  "married": true,
-  "dog": null,
-  "obj": {
-    "N": "run",
-    "u": "run",
-    "r": "run",
-    "d": "run",
-    "i": "run",
-    "n": "run"
+  {
+    "name": "Nurdin",
+    "age": 20
   },
-  "obj_2": {
-    "N": "DIN",
-    "u": "DIN",
-    "r": "DIN",
-    "d": "DIN",
-    "i": "DIN",
-    "n": "DIN"
+  {
+    "name": "Max",
+    "age": 43
   },
-  "A": ["Rus", "Игорь", "Макс"],
-  "S": true,
-  "D": null,
-  "F": {
-    "N": "run",
-    "u": "run",
-    "r": "run",
-    "d": "run",
-    "i": "run",
-    "n": "run"
+  {
+    "name": "Sofia",
+    "age": 34
   },
-  "obj_3": {
-    "N": "BRAD",
-    "u": "л",
-    "r": "J",
-    "d": "V",
-    "i": "№",
-    "n": "1"
-  },
-  "obj_4": {
-    "N": "Алиш",
-    "u": "И",
-    "r": "U",
-    "d": "*",
-    "i": "*",
-    "n": "L"
+  {
+    "name": "Yana",
+    "age": 20
   }
-}
+]
