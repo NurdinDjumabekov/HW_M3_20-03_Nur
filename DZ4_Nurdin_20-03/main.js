@@ -1,4 +1,5 @@
 const btn = document.querySelector(".btn");
+const wrapper = document.querySelector(".wrapper");
 btn.addEventListener("click", () => {
   const request = new XMLHttpRequest(); // создание запроса
   request.open("GET", "data.json"); // объявление метода запроса и указание пути
@@ -9,8 +10,14 @@ btn.addEventListener("click", () => {
     const data = JSON.parse(request.response);
     data.map((i) => {
       console.log(i);
-      document.querySelector(".name1").innerHTML = i.name;
-      document.querySelector(".age1").innerHTML = i.age;
+      let divParent = document.createElement("div");
+      let pName = document.createElement("li");
+      let pAge = document.createElement("span");
+      wrapper.append(divParent);
+      divParent.append(pName);
+      divParent.append(pAge);
+      pName.innerText = i.name;
+      pAge.innerHTML = i.age;
     });
   });
 });
