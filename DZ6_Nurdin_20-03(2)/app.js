@@ -7,14 +7,11 @@ const goToFetch = () => {
   fetch(`https://jsonplaceholder.typicode.com/todos/${count}`)
     .then((response) => response.json())
     .then((data) => {
-      const div = document.createElement("div");
-      div.setAttribute("class", "card");
-      div.innerHTML = `
+      block.innerHTML = `
               <h2>${data.title}</h2>
               <span>${data.id}</span>
               <h3>${data.completed}</h3>
           `;
-      block.append(div);
     });
 };
 
